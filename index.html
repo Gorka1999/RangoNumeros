@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rango de numeros</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="encuadrar">
+      <div class="contenedorPrin">
+        <h3>Rango entre dos numeros</h3>
+        <hr />
+        <label for="numero1">Introduce el primer numero</label><br />
+        <input type="text" name="numero1" id="numero1" value="" /><br /><br />
+        <label for="numero2">Introduce el segundo numero</label><br />
+        <input type="text" name="numero2" id="numero2" value="" />
+      </div>
+      <div class="botones">
+        <label for="cuadrao" class="texto">
+          <input type="checkbox" onclick="check()" id="clicau" />
+          El rango entre los dos numeros es:
+        </label>
+        <button id="boton" class="start" onclick="rangoNumeros()" disabled>
+          Aceptar</button
+        ><br />
+        <label for="cuadrao" class="texto">
+          <input type="checkbox" onclick="check1()" id="clicau1" />
+          El rango entre dos numeros de 3 en 3
+        </label>
+        <button id="boton1" class="start" onclick="detresentres()" disabled>
+          Aceptar</button
+        ><br />
+        <label for="cuadrao" class="texto">
+          <input type="checkbox" onclick="check2()" id="clicau2" />
+          El rango entre dos solo impares
+        </label>
+        <button id="boton2" class="start" onclick="impares()" disabled>
+          Aceptar
+        </button>
+      </div>
+    </div>
+    <div id="principal">
+      <div class="contenedor">
+        <p class="texto">Rango entre dos numeros:</p>
+        <p id="rango" class="rango"></p>
+        <!--<button class="start" onclick="rangoNumeros()">Start</button>-->
+      </div>
+      <div class="contenedor">
+        <p class="texto">Rango entre dos numeros y van de 3 en 3</p>
+        <!--<button class="start" onclick="detresentres()">Start</button>-->
+        <p id="tres" class=""></p>
+      </div>
+      <div class="contenedor">
+        <!--<button class="start" onclick="impares()">Start</button>-->
+        <p class="texto">Rango entre dos numeros impares</p>
+
+        <p id="impar" class=""></p>
+      </div>
+      <div class="contenedor"></div>
+    </div>
+    <script src="custom.js"></script>
+  </body>
+</html>
